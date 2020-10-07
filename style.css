@@ -198,4 +198,97 @@ footer {
     position: fixed;
     left: 0;
     bottom: 0;
+    color: #b3b3b3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* played song */
+footer .played-song {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+footer .played-song .track-info a {
+    text-decoration: none;
+    color: #b3b3b3;
+    display: block;
+    text-transform: capitalize;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+footer .played-song .track-info a:hover {
+    text-decoration: underline;
+}
+
+footer .played-song .track-info a:first-of-type {
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+footer .played-song .fa-heart {
+    color: #1db954;
+    margin: 0 15px;
+}
+
+
+/* controls */
+/* top controls */
+footer .top-controls {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer .top-controls span {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+footer .top-controls span:hover {
+    color: #ffffff;
+}
+
+footer .top-controls span:nth-of-type(3) {
+    font-size: 38px;
+}
+
+footer .top-controls span:nth-of-type(odd) {
+    margin: 0 30px;
+}
+
+/* bottom controls */
+footer .bottom-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .bottom-controls input {
+    height: 2px;
+    margin: 0 10px;
+    min-width: 450px;
+}
+
+footer .bottom-controls span {
+    font-size: 11px;
+    margin: 0;
+}
+
+/* sound controls */
+footer .sound-controls span:nth-of-type(2) {
+    margin: 0 10px;
+}
+
+footer .sound-controls input {
+    margin: 0 25px 0 10px;
+    vertical-align: middle;
+}
+
+footer .sound-controls input {
+    height: 2px;
+    margin: 0 10px;
+    min-width: 150px;
 }
