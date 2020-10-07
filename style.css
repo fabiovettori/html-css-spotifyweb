@@ -5,13 +5,170 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* NAVIGATION BAR */
 nav {
+    font-size: 14px;
     width: 230px;
     height: calc(100vh - 90px);
     background-color: #040404;
     float: left;
 }
+
+/* logo */
+nav .logo {
+    display: inline-block;
+    color: #ffffff;
+    width: 57%;
+    margin: 25px 0 25px 25px;
+}
+
+nav .logo svg {
+    width: 100%;
+}
+
+/* menu */
+nav .menu a {
+    display: block;
+    color: #f2f2f2;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 8px 15px;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+nav .menu a:hover > *{
+    color: #ffffff;
+}
+
+nav .menu span, nav .menu svg {
+    vertical-align: middle;
+    color: #b3b3b3;
+}
+
+nav .menu span {
+    margin-left: 10px;
+    letter-spacing: 1.1px;
+}
+
+nav .menu a:nth-of-type(2){
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+}
+
+nav .menu a:nth-of-type(2) > *{
+    color: #ffffff;
+}
+
+/* playlist */
+nav .playlist {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #b3b3b3;
+}
+
+nav .playlist > span {
+    display: block;
+    text-transform: uppercase;
+    margin-top: 25px;
+    letter-spacing: 1.1px;
+}
+
+nav .playlist > div {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+nav .playlist .icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .playlist > div > span {
+    text-transform: capitalize;
+    margin-left: 10px;
+    letter-spacing: 1.1px;
+}
+
+nav .playlist .icon.create {
+    background-color: #b3b3b3;
+}
+
+.icon.create .fa-plus {
+    color: black;
+}
+
+nav .playlist .icon.liked {
+    background: linear-gradient(135deg, #450af5 0%, #c4efd9 90%);
+    transition: all .5s linear;
+}
+
+nav .playlist > div:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+nav .playlist > div:hover .icon.liked {
+    background: linear-gradient(135deg, #450af5 0%, #c4efd9 70%);
+}
+
+nav .playlist > div:hover .icon.create {
+    background-color: #ffffff;
+}
+
+/* recent-playlist */
+nav .recent-playlist {
+    margin: 10px 25px 0;
+    color: #b3b3b3;
+}
+
+
+nav .recent-playlist span {
+    display: block;
+    padding: 8px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+nav .recent-playlist span:hover {
+    color: #ffffff;
+    cursor: default;
+}
+
+/* app */
+nav .app {
+    color: #b3b3b3;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    margin-left: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+nav .app:hover {
+    color: #ffffff;
+}
+
+nav .app span {
+    margin-left: 10px;
+}
+
 
 
 /* HEADER */
@@ -38,4 +195,7 @@ footer {
     height: 90px;
     background-color: #282828;
     float: left;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
