@@ -37,18 +37,26 @@ nav {
     height: calc(100vh - 90px);
     background-color: #040404;
     float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 25px;
 }
 
 /* logo */
 nav .logo {
     display: inline-block;
     color: #ffffff;
-    width: 57%;
     margin: 25px 0 25px 25px;
+    text-align: center;
 }
 
 nav .logo svg {
-    width: 100%;
+    display: none;
+}
+
+nav .logo span {
+    font-size: 39px;
 }
 
 /* menu */
@@ -161,14 +169,17 @@ nav .app {
     color: #b3b3b3;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     text-transform: capitalize;
-    margin-left: 25px;
-    margin-top: 20px;
     cursor: pointer;
 }
 
 nav .app:hover {
     color: #ffffff;
+}
+
+nav .app {
+    margin: 0 auto;
 }
 
 nav .app span {
@@ -481,6 +492,10 @@ footer .played-song > span:nth-of-type(2):hover {
     color: #ffffff;
 }
 
+footer .track-info, footer .fa-chalkboard {
+    display: none;
+}
+
 
 /* controls */
 /* top controls */
@@ -541,6 +556,22 @@ footer .sound-controls {
     /* logo */
     nav {
         width: 230px;
+        display: unset;
+    }
+
+    nav .logo {
+        width: 57%;
+        text-align: unset;
+    }
+
+
+    nav .logo svg {
+        display: inline-block;
+        width: 100%;
+    }
+
+    nav .logo span {
+        display: none;
     }
 
     /* menu */
@@ -643,6 +674,11 @@ footer .sound-controls {
         cursor: default;
     }
 
+    nav .app {
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+
     .text-menu {
         display: inline-block;
     }
@@ -655,6 +691,15 @@ footer .sound-controls {
     /* MAIN */
     main {
         width: calc(100% - 230px);
+    }
+
+    /* FOOTER */
+    footer .track-info {
+        display: block;
+    }
+
+    footer .fa-chalkboard {
+        display: inline-block;
     }
 }
 
