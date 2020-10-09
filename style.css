@@ -501,6 +501,7 @@ footer .track-info, footer .fa-chalkboard {
 /* top controls */
 footer .controls {
     flex-grow: 1;
+    margin-right: 25px;
 }
 
 footer .top-controls {
@@ -509,7 +510,7 @@ footer .top-controls {
 }
 
 footer .top-controls span {
-    font-size: 18px;
+    font-size: 14px;
     vertical-align: middle;
 }
 
@@ -518,11 +519,11 @@ footer .top-controls span:hover {
 }
 
 footer .top-controls span:nth-of-type(3) {
-    font-size: 38px;
+    font-size: 26px;
 }
 
 footer .top-controls span:nth-of-type(odd) {
-    margin: 0 30px;
+    margin: 0 20px;
 }
 
 /* bottom controls */
@@ -535,7 +536,7 @@ footer .bottom-controls {
 footer .bottom-controls input {
     height: 2px;
     margin: 0 10px;
-    min-width: 250px;
+    min-width: 150px;
 }
 
 footer .bottom-controls span {
@@ -551,6 +552,28 @@ footer .sound-controls {
 
 
 /* MEDIA QUERIES */
+@media screen and (min-width: 376px) {
+    footer .controls {
+        margin-right: unset;
+    }
+
+    footer .top-controls span {
+        font-size: 18px;
+    }
+
+    footer .bottom-controls input {
+        min-width: 250px;
+    }
+
+    footer .top-controls span:nth-of-type(3) {
+        font-size: 38px;
+    }
+
+    footer .top-controls span:nth-of-type(odd) {
+        margin: 0 30px;
+    }
+}
+
 @media screen and (min-width: 576px) {
     main div.browser {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
