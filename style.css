@@ -269,7 +269,7 @@ main {
 main div.genres {
     display: grid;
     margin-top: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-auto-rows: minmax(220px, auto);
     grid-gap: 16px;
 }
@@ -704,6 +704,11 @@ footer .sound-controls {
 }
 
 @media screen and (min-width: 960px) {
+    /* MAIN */
+    main div.genres {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
     /* FOOTER */
     footer .controls {
         flex-grow: 0;
